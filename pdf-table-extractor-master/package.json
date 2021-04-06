@@ -1,0 +1,15 @@
+{
+  "name": "pdf-table-extractor-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pdf-table-extractor": "^1.0.3",
+    "pdf-text-reader": "^1.2.0"
+  }
+}

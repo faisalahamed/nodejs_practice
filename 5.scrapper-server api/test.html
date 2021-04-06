@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IEDCR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="icon"
+      type="image/x-icon"
+      href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <img src="iedcr_logo.jpg" class="rounded float-left" alt="IEDCR" width="130">
+    </div>
+    <div class="col-md-8">
+      <center><h3>Institute of Epidemiology, Disease Control and Research (IEDCR)</h3>
+      <h3>রোগতত্ত্ব , রোগ নিয়ন্ত্রণ ও গবেষণা ইনস্টিটিউট</h3></center>
+    </div>
+    <div class="col-md-2">
+      <img src="govt_bd.png" class="rounded float-right" alt="GOVT of BD" width="150">
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <center><img src="iedcr_img.jpg" class="img-fluid" alt="Responsive image"></center>
+  </div>
+  <br/>
+  <div class="row">
+    <center><h4><b></b>Covid-19 Status Bangladesh</b></h4></center>
+  </div>
+
+  <div class="row">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Updated on 19-04-2020</th>
+          <th>IEDCR lab</th>
+          <th>Other lab</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+      
+        <tr>
+          <td>COVID-19 test conducted in last 24 hours</td>
+          <td>462</td>
+          <td>2172</td>
+          <td>2634</td>
+        </tr>
+
+      
+        <tr>
+          <td>Total COVID-19 test conducted</td>
+          <td>6090</td>
+          <td>17851</td>
+          <td>23941</td>
+        </tr>
+
+      
+        <tr>
+          <td>COVID-19 positive cases in last 24 hours</td>
+          <td>83</td>
+          <td>229</td>
+          <td>312</td>
+        </tr>
+
+      
+        <tr>
+          <td>COVID-19 Total cases</td>
+          <td>816</td>
+          <td>1640</td>
+          <td>2456</td>
+        </tr>
+
+            </tbody>
+    </table>
+  </div>
+  <div class="row">
+        <div class="col-sm-3">
+      <center><p>Recovered in last 24 hours</p></center>
+      <center><h3>9</h3></center>
+    </div>
+      <div class="col-sm-3">
+      <center><p>Total Recovered</p></center>
+      <center><h3>75</h3></center>
+    </div>
+      <div class="col-sm-3">
+      <center><p>Death in last 24 hours</p></center>
+      <center><h3>7</h3></center>
+    </div>
+      <div class="col-sm-3">
+      <center><p>Total Death</p></center>
+      <center><h3>91</h3></center>
+    </div>
+    </div>
+  <div class='row'>
+            <div id="columnchart_values" class="col-md-12">
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+  <!--<p><a href="http://119.40.84.187/surveillance">Further analysis of COVID-19 confirmed case</a></p>-->
+<a href="website/images/files/nCoV/Confirmed COVID-19 cases_upto_19_April 2020.pdf">Distribution of confirmed cases in Bangladesh</a></p>
+<p><a href="website/images/files/nCoV/19_April.jpg">District Wise Map Distribution</a></p>
+</div>
+</div>
+    <div class="row">
+        <div id="sampledate">
+           
+        </div>
+    </div>
+  <div class="row">
+    <div class="col-md-12">
+  <br>
+  <br>
+      <center><a href="website">IEDCR website</a><center>
+    </div>
+  </div>
+  <br/>
+  <br/>
+</div>
+
+</body>
+<script type="text/javascript">
+    google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Date", "Cases", { role: "style" } ],
+                    ["2020-03-08", 3, "#b87333"],
+                    ["2020-03-09", 0, "#b87333"],
+                    ["2020-03-10", 0, "#b87333"],
+                    ["2020-03-11", 0, "#b87333"],
+                    ["2020-03-12", 0, "#b87333"],
+                    ["2020-03-13", 0, "#b87333"],
+                    ["2020-03-14", 0, "#b87333"],
+                    ["2020-03-15", 2, "#b87333"],
+                    ["2020-03-16", 3, "#b87333"],
+                    ["2020-03-17", 2, "#b87333"],
+                    ["2020-03-18", 4, "#b87333"],
+                    ["2020-03-19", 3, "#b87333"],
+                    ["2020-03-20", 3, "#b87333"],
+                    ["2020-03-21", 4, "#b87333"],
+                    ["2020-03-22", 3, "#b87333"],
+                    ["2020-03-23", 6, "#b87333"],
+                    ["2020-03-24", 6, "#b87333"],
+                    ["2020-03-25", 0, "#b87333"],
+                    ["2020-03-26", 5, "#b87333"],
+                    ["2020-03-27", 4, "#b87333"],
+                    ["2020-03-28", 0, "#b87333"],
+                    ["2020-03-29", 0, "#b87333"],
+                    ["2020-03-30", 1, "#b87333"],
+                    ["2020-03-31", 2, "#b87333"],
+                    ["2020-04-01", 3, "#b87333"],
+                    ["2020-04-02", 2, "#b87333"],
+                    ["2020-04-03", 5, "#b87333"],
+                    ["2020-04-04", 9, "#b87333"],
+                    ["2020-04-05", 18, "#b87333"],
+                    ["2020-04-06", 35, "#b87333"],
+                    ["2020-04-07", 41, "#b87333"],
+                    ["2020-04-08", 54, "#b87333"],
+                    ["2020-04-09", 112, "#b87333"],
+                    ["2020-04-10", 94, "#b87333"],
+                    ["2020-04-11", 58, "#b87333"],
+                    ["2020-04-12", 139, "#b87333"],
+                    ["2020-04-13", 182, "#b87333"],
+                    ["2020-04-14", 209, "#b87333"],
+                    ["2020-04-15", 268, "#b87333"],
+                    ["2020-04-16", 292, "#b87333"],
+                    ["2020-04-17", 266, "#b87333"],
+                    ["2020-04-18", 306, "#b87333"],
+                    ["2020-04-19", 312, "#b87333"],
+              ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        title: "Date wise COVID-19 Case",
+        width: "100%",
+        height: 600,
+        bar: {groupWidth: "95%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(view, options);
+  }
+  </script>
+<script>
+  //$('#sampledate').load('/119.40.84.187/surveillance #case-date-vs-quantity');
+  /*
+  $.ajax({
+   url: 'https://119.40.84.187/surveillance',
+   crossDomain: false,
+   success: function (data) {
+      $("#sampledate").html($(data).find("#case-date-vs-quantity"));
+   },
+   dataType: 'html'
+});*/
+</script>
+</html>
